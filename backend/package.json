@@ -1,0 +1,43 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Este backend tiene como finalidad la configuracion de registros para las personas, empresas y profecionales que quieran ser parte se SENTA.",
+  "main": "./server/server.ts",
+  "scripts": {
+    "dev": "node server/index.ts",
+    "data": "nodemon backend/connection/db.ts",
+    "build": "tsc",
+    "test": "nodemon ./test/tablaPersonas.ts"
+  },
+  "keywords": [
+    "senta",
+    "el nieto de santa"
+  ],
+  "author": "Creycel Poleon Yan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "1.13.2",
+    "bcrypt": "6.0.0",
+    "cors": "2.8.5",
+    "dotenv": "17.2.3",
+    "express": "5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "mssql": "12.1.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/mssql": "^9.1.8",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}

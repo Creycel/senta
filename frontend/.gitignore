@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+
+# Producción (Build)
+dist/
+dist-ssr/
+*.local
+
+# Variables de entorno
+.env
+.env.*
+
+# Logs y temporales
+*.log
+npm-debug.log*
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo

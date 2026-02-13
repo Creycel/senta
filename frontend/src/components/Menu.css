@@ -1,0 +1,184 @@
+/* Menú y barra de búsqueda */
+.menubarradebusqueda {
+  background-color: #d4b98a;
+  padding: 10px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contenido-menu {
+  flex: 1;
+  min-width: 250px;
+}
+
+.ventanas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ventanas li a {
+  display: block;
+  padding: 10px 15px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.ventanas li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.barra-busqueda input {
+  padding: 8px 12px;
+  border: 1px solid #c4a576;
+  border-radius: 8px;
+  background-color: #faf8f4;
+  color: #2c1810;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+  max-width: 100%;
+}
+
+.barra-busqueda input::placeholder {
+  color: #000000;
+}
+
+.barra-busqueda input:focus {
+  border-color: #a68a5e;
+}
+
+.barra-busqueda button {
+  padding: 8px 16px;
+  background-color: #a68a5e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.barra-busqueda button:hover {
+  background-color: #8b7355;
+}
+
+/* Redes sociales */
+.redes-sociales-M {
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.redes-sociales-M ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.redes-sociales-M li a {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.redes-sociales-M li a:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .menubarradebusqueda {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ventanas {
+    justify-content: center;
+  }
+
+  .barra-busqueda {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .barra-busqueda input {
+    width: 100%;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .ventanas {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ventanas li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .barra-busqueda {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .barra-busqueda button {
+    width: 100%;
+  }
+
+  .redes-sociales-M {
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .menubarradebusqueda {
+    padding: 10px;
+  }
+
+  .ventanas li a {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .barra-busqueda input {
+    font-size: 13px;
+  }
+
+  .barra-busqueda button {
+    font-size: 14px;
+  }
+}

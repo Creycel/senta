@@ -1,0 +1,206 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* LOGO REGISTRO */
+.logo-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo-registro img {
+  width: 40%;
+  max-width: 180px;
+  height: auto;
+}
+
+/* CUERPO - CONTENEDOR PRINCIPAL */
+.cuerpo {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 900px;
+  width: 92%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion {
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ENLACES SUPERIORES */
+.otro-formulario-registro {
+  margin-bottom: 20px;
+  background-color: #d4a017;
+  border: 1.5px solid #000000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.otro-formulario-registro a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+.formulario-empresa,
+.formulario-profesional,
+.formulario-persona {
+  padding: 10px 15px;
+  background-color: #d4a017;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.formulario-empresa:hover,
+.formulario-profesional:hover,
+.formulario-persona:hover {
+  background-color: #bb8b13;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.dentro-cuerpo-registro {
+  margin-bottom: 15px;
+}
+
+/* GRID PRINCIPAL */
+.cuerpo-formulario-registro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* CAMPOS */
+.informacion-registro {
+  display: flex;
+  flex-direction: column;
+}
+
+.informacion-registro label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.informacion-registro input,
+.informacion-registro select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+}
+
+.informacion-registro input:focus,
+.informacion-registro select:focus {
+  border-color: #d4a017;
+}
+
+/* BOTÓN */
+.boton-formulario-registro {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+}
+
+.boton-formulario-registro button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #d4a017;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-formulario-registro button:hover {
+  background-color: #bb8e16;
+}
+
+/* ENLACE INFERIOR */
+.enelace-inicio-de-sesion-registro {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.enelace-inicio-de-sesion-registro a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.enelace-inicio-de-sesion-registro a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+/* MÓVILES */
+@media (max-width: 768px) {
+  .cuerpo {
+    padding: 20px;
+  }
+
+  .cuerpo-formulario-registro {
+    grid-template-columns: 1fr;
+  }
+
+  .boton-formulario-registro {
+    grid-column: span 1;
+  }
+
+  .logo-registro img {
+    width: 55%;
+  }
+}
+
+/* MÓVILES PEQUEÑOS */
+@media (max-width: 480px) {
+  .cuerpo {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .informacion-registro input,
+  .informacion-registro select {
+    font-size: 14px;
+    padding: 9px;
+  }
+
+  .boton-formulario-registro button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1200px) {
+  .cuerpo {
+    max-width: 1000px;
+  }
+}

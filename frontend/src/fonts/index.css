@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  /* El color de del background lo tome de un post de instagram, vi que combinaba con el de mi logo :) */
+  /* background-color: rgb(235, 228, 209); */
+  /* background-color: hsl(44deg 39.4% 87.1%); */
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5eedb;
+}

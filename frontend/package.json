@@ -1,0 +1,50 @@
+{
+  "name": "senta",
+  "author": "Creycel Poleon Yan",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "base-datos": "nodemon src/backend/database/connection/db-senta.ts",
+    "rutas": "nodemon src/backend/routes/ruta.ts",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^12.1.0",
+    "nodemon": "^3.1.10",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.6",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mssql": "^9.1.8",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.13.4",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.45.0",
+    "vite": "^7.1.7"
+  }
+}
