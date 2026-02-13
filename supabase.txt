@@ -1,0 +1,3 @@
+- Para la creacion de la base de datos en Supabase
+    Project name: Senta
+    Database password: InspiradoenSanta
